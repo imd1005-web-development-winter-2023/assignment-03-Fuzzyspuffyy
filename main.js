@@ -1,8 +1,46 @@
 //
 //  JS File
-//  You may remove the code below - it's just boilerplate
+
+
+
+// Variables
+var alltasks = [];
+
+//
+// Functions
 //
 
+function delitetask() {
+  var id = this.id;
+  alltasks.splice(id, 1);
+  creatlistoftasks(alltasks);
+}
+
+function creatlistoftasks(list) {
+
+  var addNewList = document.getElementsById("addNewList");
+  addNewList.innerHTML = "";
+  for (let i = 0; i < list.length; i++) {
+
+    var newelement = "<li> <input type = 'checkbox'>" + alltasks[i] + "</input> <button id ='" + i + "'  onclick='delitetask()'> delete </button > </li > "; //newelement  
+    addNewList.innerHTML += newelement;
+
+  }
+}
+
+
+function addtask() {
+
+  document.getElementById("AddNewTask").value;//value
+  var AddNewTask = document.getElementById("AddNewTask").value; //tack out value in input box
+  alltasks.push(AddNewTask);
+  creatlistoftasks(alltasks);
+}
+
+
+/*
+//  You may remove the code below - it's just boilerplate
+//
 //
 // Variables
 //
@@ -42,3 +80,4 @@ function inititialise() {
 //
 
 inititialise();
+*/
