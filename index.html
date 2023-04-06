@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="style.css" />
   <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
 </head>
 
 <body>
@@ -38,23 +39,93 @@
     -->
 
 
-  <div style="display: flex;">
-    <img scr="Images/Logo.jpg" alt="logo" height="50px" width="50ox">
-  </div>
-  <h1> My Todo List APP</h1>
-  <input type="Text" placeholder="Add Task" id="AddNewTask">
-  <button id="addnewbutton" onclick="addtask()">
-    Add New Tasks
-  </button>
-  <ul style="list-style: none;" id="addNewList">
+  <!--
+ Header
+-->
+
+
+  <h1>To Do List Ckecker</h1>
+
+  <nav>
+    <ul class="MenuBar">
+      <img src="Images/Logo..jpg" alt="logo" height="90px" width="170ox">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/products">Our Products</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Support</a></li>
+  </nav>
+  </header>
+
+
+
+
+  <main>
+
+
+
+
+
+    <div style="display: flex;">
+
+    </div>
+    <h1> My Todo List APP</h1>
+    <input type="Text" placeholder="Add Task" id="AddNewTask">
+    <button id="addnewbutton" onclick="addtask()">
+      Add New Tasks
+    </button>
+    <ul style="list-style: none;" id="addNewList">
+      </footer>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+  <footer>
+
+
     <!--
 <li>
 Done
 </li>
 -->
 
+
+
+    <!-- Footer Area -->
+    <footer>
+
+      <nav class="footer--nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/products">Our Products</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Support</a></li>
+          <li class="footer--nav--push"><a href="#">Privacy</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+
+        </ul>
+      </nav>
+    </footer>
+    </div>
+
+
     <!-- This is where we add our awesome JavaScript code -->
     <script src="./main.js"></script>
+
 </body>
 
 </html>
