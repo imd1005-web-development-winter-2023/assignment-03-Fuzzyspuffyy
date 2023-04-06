@@ -16,7 +16,6 @@
 
   <!-- This is where all of our awesome CSS code goes -->
   <link rel="stylesheet" href="style.css" />
-
   <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
 </head>
@@ -40,19 +39,22 @@
 
 
   <div style="display: flex;">
-    <img scr="images/favicon/logo.JPG" alt="logo" height="50px" width="50ox">
+    <img scr="Images/Logo.jpg" alt="logo" height="50px" width="50ox">
   </div>
   <h1> My Todo List APP</h1>
+  <input type="Text" placeholder="Add Task" id="AddNewTask">
+  <button id="addnewbutton" onclick="addtask()">
+    Add New Tasks
+  </button>
+  <ul style="list-style: none;" id="addNewList">
+    <!--
+<li>
+Done
+</li>
+-->
 
-
-
-
-  <main>
-    <div id="app"></div>
-  </main>
-
-  <!-- This is where we add our awesome JavaScript code -->
-  <script src="./main.js"></script>
+    <!-- This is where we add our awesome JavaScript code -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
