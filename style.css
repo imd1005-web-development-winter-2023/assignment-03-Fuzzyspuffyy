@@ -45,7 +45,9 @@ ul.MenuBar>li a {
 }
 
 
-
+/*******************************
+Main
+*******************************/
 ul.main {
   background-color: #eee;
   padding: 175px;
@@ -54,7 +56,16 @@ ul.main {
 
 }
 
+image {
 
+  border: 8px solid skyblue;
+
+
+}
+
+/*******************************
+Footer
+*******************************/
 
 /*
  Targeting  the
