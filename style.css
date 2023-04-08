@@ -18,31 +18,42 @@ ul.MenuBar {
   color: black;
   list-style: none;
 
-  /* Add display flex to make it a flex object */
+  /* display flex to make it a flex object */
   display: flex;
 
-  /* Add the flex direction */
+  /* flex direction */
   flex-direction: row;
 
-  /* Add flex wrap to let them wrap */
+  /* flex wrap to let them wrap */
   flex-wrap: wrap;
 
-  /* Add Justify content and experiment with the different options */
+  /* Justify content */
   justify-content: space-between;
 }
 
-/* You don't need to change anything in here */
+/*  Menue */
 ul.MenuBar>li {
-  border-radius: 10px;
+  border: 20px solid #2d9cdb;
   padding: 10px;
   background-color: #eee;
 }
 
-/* You don't need to change anything in here */
+/* Memu*/
 ul.MenuBar>li a {
   color: #1d3557;
   text-decoration: none;
 }
+
+
+
+ul.main {
+  background-color: #eee;
+  padding: 175px;
+  border: 30px solid #2d9cdb;
+  margin: 50;
+
+}
+
 
 
 /*
