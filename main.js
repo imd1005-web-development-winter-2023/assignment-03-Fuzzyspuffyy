@@ -18,7 +18,7 @@ function delitetask() {
 
 function creatlistoftasks(list) {
 
-  var addNewList = document.getElementsById("addNewList");
+  var addNewList = document.getElementById("addNewList");
   addNewList.innerHTML = "";
   for (let i = 0; i < list.length; i++) {
 
