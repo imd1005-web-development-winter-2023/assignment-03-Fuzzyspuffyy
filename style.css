@@ -29,13 +29,18 @@ ul.MenuBar {
 
   /* Justify content */
   justify-content: space-between;
+
+
 }
+
+
 
 /*  Menue */
 ul.MenuBar>li {
   border: 20px solid #2d9cdb;
   padding: 10px;
   background-color: #eee;
+
 }
 
 /* Memu*/
@@ -56,9 +61,10 @@ ul.main {
 
 }
 
-image {
-
+.image {
+  display: block;
   border: 8px solid skyblue;
+  max-width: 100%;
 
 
 }
@@ -76,6 +82,7 @@ footer {
   padding: 30px 20px;
   background-color: #1d3557;
   color: #f1faee;
+
 }
 
 nav {
@@ -135,4 +142,11 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+img {
+
+
+  display: block;
+  max-width: 50%;
 }
