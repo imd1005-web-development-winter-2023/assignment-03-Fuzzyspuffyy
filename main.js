@@ -34,6 +34,8 @@ function updatcheckbox(id) {
 
 
 
+
+
 function creatlistoftasks(list) {
 
   var addNewList = document.getElementById("addNewList");
@@ -41,7 +43,7 @@ function creatlistoftasks(list) {
   for (let i = 0; i < list.length; i++) {
     var checked = checkbox[i] ? "checked" : "";
 
-    var newelement = "<li style='padding: 2.7%; border: 1px solid black; width: 50%; margin: 0 auto; background-color: cadetblue;'> <input type ='checkbox'" + checked + " onchange= 'updatcheckbox(" + i + ")'> " + alltasks[i] + "</input>  <button id='" + i + "' onclick='delitetask(" + i + ")'> Delete </button > </li > "; //newelement
+    var newelement = "<li style='padding: 2.7%; border: 1px solid black; width: 50%; margin: 0 auto; background-color: cadetblue;'> <input type ='checkbox'" + checked + " onchange= 'updatcheckbox(" + i + ")'> " + alltasks[i] + "</input>  <button id='" + i + "' onclick='delitetask(" + i + ")'> D-elete </button > </li > "; //newelement
     addNewList.innerHTML += newelement;
   }
 }
@@ -54,6 +56,14 @@ function addtask() {
   alltasks.push(AddNewTask);
   creatlistoftasks(alltasks);
   checkbox.push(false);
+}
+
+function clearAndRestart() {
+
+  alltasks = [];
+  checkbox = [];
+  creatlistoftasks(alltasks);
+
 }
 
 

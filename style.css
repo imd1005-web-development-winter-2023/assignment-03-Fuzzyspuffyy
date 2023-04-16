@@ -78,6 +78,14 @@ footer {
   color: #f1faee;
 }
 
+nav {
+
+  padding: 30px 20px;
+  counter-set: 50;
+
+
+}
+
 .footer--nav ul {
   display: flex;
   flex-direction: row;
@@ -113,6 +121,7 @@ body {
   background-color: #f1faee;
   min-height: 100%;
   min-width: 100%;
+  max-width: 50%;
 }
 
 /****** Screen reader text *******/
