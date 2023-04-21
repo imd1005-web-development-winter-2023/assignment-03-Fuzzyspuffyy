@@ -2,46 +2,136 @@
   CSS File
 */
 
-/*
- VARIABLES
-*/
-:root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
 
-  /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
+/*******************************
+MenuBar
+*******************************/
 
-  /* Body configuration */
-  --body-default-colour: var(--colour-cello);
-  --body-background-colour: var(--colour-peppermint);
-}
+ul.MenuBar {
+  background: rgb(121, 47, 181);
+  background: linear-gradient(90deg, rgba(121, 47, 181, 1) 0%,
+      rgba(246, 71, 111, 1) 26%, rgba(67, 94, 248, 1) 78%, rgba(69, 223, 232, 1) 97%,
+      rgba(186, 69, 232, 1) 98%, rgba(69, 196, 235, 1) 100%,
+      rgba(70, 252, 228, 0.009307946811537127) 100%);
+  margin: 0px;
+  padding: 30px;
+  color: black;
+  list-style: none;
 
-/*
-  PAGE / BODY
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
-}
-
-main {
-  min-height: 100vh;
-
+  /* display flex to make it a flex object */
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  /* flex direction */
+  flex-direction: row;
+
+  /* flex wrap to let them wrap */
+  flex-wrap: wrap;
+
+  /* Justify content */
+  justify-content: space-between;
+
+
+}
+
+
+
+/*  Menue */
+ul.MenuBar>li {
+  border: 20px solid #2d9cdb;
+  padding: 10px;
+  background-color: #eee;
+
+}
+
+/* Memu*/
+ul.MenuBar>li a {
+  color: #1d3557;
+  text-decoration: none;
+}
+
+
+/*******************************
+Main
+*******************************/
+ul.main {
+  background-color: #eee;
+  padding: 175px;
+  border: 30px solid #2d9cdb;
+  margin: 50;
+
+}
+
+.image {
+  display: block;
+  border: 8px solid skyblue;
+  max-width: 100%;
+
+
+}
+
+/*******************************
+Footer
+*******************************/
+
+/*
+ Targeting  the
+  footer directly. Padding to the top and bottom (nothing on the side)
+  and setting the background and text colours.
+*/
+footer {
+  padding: 30px 20px;
+  background-color: #1d3557;
+  color: #f1faee;
+
+}
+
+nav {
+
+  padding: 30px 20px;
+  counter-set: 50;
+
+
+}
+
+.footer--nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 30px;
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer--nav ul li a {
+  font-weight: 900;
+  color: #f1faee;
+  text-decoration: underline;
 }
 
 /*
-  Screen reader text utility class
+  margin-left auto
+  positioning trick to push
+  the element to the right
 */
+.footer--nav--push {
+  margin-left: auto;
+}
+
+/****************************/
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1faee;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 50%;
+}
+
+/****** Screen reader text *******/
 .sr-only {
   position: absolute;
   width: 1px;
@@ -52,4 +142,165 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+img {
+
+
+  display: block;
+  max-width: 50%;
+}
+
+
+@media screen and (min-width: 750px) {
+
+
+  /*******************************
+MenuBar
+*******************************/
+
+  .ul.MenuBar {
+    background: rgb(121, 47, 181);
+    background: linear-gradient(90deg, rgba(121, 47, 181, 1) 0%,
+        rgba(246, 71, 111, 1) 26%, rgba(67, 94, 248, 1) 78%, rgba(69, 223, 232, 1) 97%,
+        rgba(186, 69, 232, 1) 98%, rgba(69, 196, 235, 1) 100%,
+        rgba(70, 252, 228, 0.009307946811537127) 100%);
+    margin: 0px;
+    padding: 30px;
+    color: black;
+    list-style: none;
+
+    /* display flex to make it a flex object */
+    display: flex;
+
+    /* flex direction */
+    flex-direction: row;
+
+    /* flex wrap to let them wrap */
+    flex-wrap: wrap;
+
+    /* Justify content */
+    justify-content: space-between;
+
+
+  }
+
+
+
+  /*  Menue */
+  .ul.MenuBar>li {
+    border: 20px solid #2d9cdb;
+    padding: 10px;
+    background-color: #eee;
+
+  }
+
+  /* Memu*/
+  .ul.MenuBar>li a {
+    color: #1d3557;
+    text-decoration: none;
+  }
+
+
+  /*******************************
+Main
+*******************************/
+  .ul.main {
+    background-color: #eee;
+    padding: 175px;
+    border: 30px solid #2d9cdb;
+    margin: 50;
+
+  }
+
+  .image {
+    display: block;
+    border: 8px solid skyblue;
+    max-width: 100%;
+
+
+  }
+
+  /*******************************
+Footer
+*******************************/
+
+  /*
+ Targeting  the
+  footer directly. Padding to the top and bottom (nothing on the side)
+  and setting the background and text colours.
+*/
+  .footer {
+    padding: 30px 20px;
+    background-color: #1d3557;
+    color: #f1faee;
+
+  }
+
+  .nav {
+
+    padding: 30px 20px;
+    counter-set: 50;
+
+
+  }
+
+  .footer--nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 30px;
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .footer--nav ul li a {
+    font-weight: 900;
+    color: #f1faee;
+    text-decoration: underline;
+  }
+
+  /*
+  margin-left auto
+  positioning trick to push
+  the element to the right
+*/
+  .footer--nav--push {
+    margin-left: auto;
+  }
+
+  /****************************/
+
+  .body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1faee;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 50%;
+  }
+
+  /****** Screen reader text *******/
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .img {
+
+
+    display: block;
+    max-width: 50%;
+  }
+
 }
